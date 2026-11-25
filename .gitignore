@@ -1,0 +1,55 @@
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+*.env.local
+*.env.production
+*.pem
+*.key
+
+# Python & Node & Build
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Logs
+*.log
+logs/
+
+# Runtime data, historical market caches, backups & screenshots (~175 MB)
+data/*
+!data/reports/
+data/reports/*
+!data/reports/gd41_chart_stability_evidence.json
+docs/screenshots/
+screenshot_initial.png
+
+# One-off local machine & Docker debug helpers
+check_pipes.py
+check_procs.py
+check_recent_log.py
+find_shortcuts.py
+launch_via_shortcut.py
+read_shortcut.py
+view_backend_log.py
+monitor_docker.py
+start_docker_correctly.py
+run_docker_schtask.bat
+test_docker.py
+ddl_debug_signals.sql
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

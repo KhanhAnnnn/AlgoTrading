@@ -1,0 +1,315 @@
+{
+  "report_id": "gd41_chart_stability_and_multi_asset_evidence",
+  "generated_at": "2026-11-25T13:40:35.970679+00:00",
+  "baseline": "v2.0.0-rc1",
+  "acceptance_status": "ACCEPTED",
+  "safety_invariants": {
+    "trading_mode": "DRY_RUN",
+    "paper_execution_gate_open": false,
+    "paper_execution_gate_mode": "ALPACA_PAPER_READ_ONLY",
+    "environment": "SIMULATION",
+    "alpaca_broker_write_calls": 0,
+    "v1_flink_jobs_modified": false
+  },
+  "reproduction_before_fix": {
+    "tooltip_occlusion_flickers_on_80pt_sweep": 12,
+    "causes_identified": [
+      "Tooltip overlay (absolute top-3 left-3) intercepted canvas mousemove events during hover causing rapid mount/unmount flicker loop",
+      "Live OHLCV HUD strip used dynamic flex-wrap without fixed height causing line-wrap reflow across WARMUP/Insufficient/Extended-hours bars",
+      "onCrosshair called synchronous React setState on every mousemove pixel without RAF coalescing or bar-epoch deduplication",
+      "ResizeObserver invoked chart.applyOptions on subpixel noise without integer size guard",
+      "focusRequest effect depended on barLookup causing zoom resets when filter state changed",
+      "BacktestRunner ignored STRICT_HOURS policy and Crypto cache matching defaulted feed=IEX instead of CRYPTO"
+    ]
+  },
+  "multi_asset_validation_matrix": [
+    {
+      "symbol": "NVDA",
+      "asset_class": "STOCKS",
+      "strategy": "MA_CROSS_1M",
+      "run_id": "bt_alpaca_819afd7567c2",
+      "provider": "ALPACA",
+      "feed": "IEX",
+      "bars": 1560,
+      "flat_bars": 0,
+      "zero_vol_bars": 0,
+      "sessions": {
+        "RTH": 1560
+      },
+      "gaps": {
+        "total_gaps": 3,
+        "non_trading_session": 3,
+        "extended_hours_no_trade": 0,
+        "rth_missing": 0,
+        "feed_gap": 0
+      },
+      "median_price": 153.51,
+      "signals": 36,
+      "fills": 36,
+      "closed_trades": 18,
+      "first_bar": "2026-11-16T14:30:00+00:00",
+      "last_bar": "2026-11-19T20:59:00+00:00"
+    },
+    {
+      "symbol": "AAPL",
+      "asset_class": "STOCKS",
+      "strategy": "MA_CROSS_1M",
+      "run_id": "bt_alpaca_9bd20e529ed7",
+      "provider": "ALPACA",
+      "feed": "IEX",
+      "bars": 1560,
+      "flat_bars": 1,
+      "zero_vol_bars": 0,
+      "sessions": {
+        "RTH": 1560
+      },
+      "gaps": {
+        "total_gaps": 3,
+        "non_trading_session": 3,
+        "extended_hours_no_trade": 0,
+        "rth_missing": 0,
+        "feed_gap": 0
+      },
+      "median_price": 352.0425,
+      "signals": 42,
+      "fills": 42,
+      "closed_trades": 21,
+      "first_bar": "2026-11-16T14:30:00+00:00",
+      "last_bar": "2026-11-19T20:59:00+00:00"
+    },
+    {
+      "symbol": "TSLA",
+      "asset_class": "STOCKS",
+      "strategy": "MA_CROSS_1M",
+      "run_id": "bt_alpaca_115e24cfc496",
+      "provider": "ALPACA",
+      "feed": "IEX",
+      "bars": 1554,
+      "flat_bars": 19,
+      "zero_vol_bars": 0,
+      "sessions": {
+        "RTH": 1554
+      },
+      "gaps": {
+        "total_gaps": 9,
+        "non_trading_session": 3,
+        "extended_hours_no_trade": 0,
+        "rth_missing": 6,
+        "feed_gap": 0
+      },
+      "median_price": 380.01,
+      "signals": 39,
+      "fills": 39,
+      "closed_trades": 19,
+      "first_bar": "2026-11-16T14:30:00+00:00",
+      "last_bar": "2026-11-19T20:59:00+00:00"
+    },
+    {
+      "symbol": "MSFT",
+      "asset_class": "STOCKS",
+      "strategy": "RSI_1M",
+      "run_id": "bt_alpaca_7015c93f34b9",
+      "provider": "ALPACA",
+      "feed": "IEX",
+      "bars": 1560,
+      "flat_bars": 2,
+      "zero_vol_bars": 0,
+      "sessions": {
+        "RTH": 1560
+      },
+      "gaps": {
+        "total_gaps": 3,
+        "non_trading_session": 3,
+        "extended_hours_no_trade": 0,
+        "rth_missing": 0,
+        "feed_gap": 0
+      },
+      "median_price": 507.105,
+      "signals": 98,
+      "fills": 78,
+      "closed_trades": 15,
+      "first_bar": "2026-11-16T14:30:00+00:00",
+      "last_bar": "2026-11-19T20:59:00+00:00"
+    },
+    {
+      "symbol": "BTC/USD",
+      "asset_class": "CRYPTO",
+      "strategy": "MA_CROSS_1M",
+      "run_id": "bt_alpaca_025c9959d3d3",
+      "provider": "ALPACA",
+      "feed": "CRYPTO",
+      "bars": 2881,
+      "flat_bars": 0,
+      "zero_vol_bars": 1849,
+      "sessions": {
+        "CRYPTO_24_7": 2881
+      },
+      "gaps": {
+        "total_gaps": 0,
+        "non_trading_session": 0,
+        "extended_hours_no_trade": 0,
+        "rth_missing": 0,
+        "feed_gap": 0
+      },
+      "median_price": 63476.521,
+      "signals": 71,
+      "fills": 330,
+      "closed_trades": 146,
+      "first_bar": "2026-11-18T00:00:00+00:00",
+      "last_bar": "2026-11-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "ETH/USD",
+      "asset_class": "CRYPTO",
+      "strategy": "MA_CROSS_1M",
+      "run_id": "bt_alpaca_a16d258a160c",
+      "provider": "ALPACA",
+      "feed": "CRYPTO",
+      "bars": 2881,
+      "flat_bars": 0,
+      "zero_vol_bars": 2564,
+      "sessions": {
+        "CRYPTO_24_7": 2881
+      },
+      "gaps": {
+        "total_gaps": 0,
+        "non_trading_session": 0,
+        "extended_hours_no_trade": 0,
+        "rth_missing": 0,
+        "feed_gap": 0
+      },
+      "median_price": 1794.7,
+      "signals": 73,
+      "fills": 305,
+      "closed_trades": 17,
+      "first_bar": "2026-11-18T00:00:00+00:00",
+      "last_bar": "2026-11-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "SOL/USD",
+      "asset_class": "CRYPTO",
+      "strategy": "MA_CROSS_1M",
+      "run_id": "bt_alpaca_a0490c840b45",
+      "provider": "ALPACA",
+      "feed": "CRYPTO",
+      "bars": 2881,
+      "flat_bars": 0,
+      "zero_vol_bars": 2585,
+      "sessions": {
+        "CRYPTO_24_7": 2881
+      },
+      "gaps": {
+        "total_gaps": 0,
+        "non_trading_session": 0,
+        "extended_hours_no_trade": 0,
+        "rth_missing": 0,
+        "feed_gap": 0
+      },
+      "median_price": 74.285,
+      "signals": 72,
+      "fills": 274,
+      "closed_trades": 28,
+      "first_bar": "2026-11-18T00:00:00+00:00",
+      "last_bar": "2026-11-20T00:00:00+00:00"
+    }
+  ],
+  "chrome_e2e_evidence": {
+    "timestamp": "2026-11-25T13:38:05.252Z",
+    "viewport": "1366x768",
+    "consoleErrors": [],
+    "uiDropdownContains": {
+      "NVDA": true,
+      "AAPL": true,
+      "TSLA": true,
+      "MSFT": true
+    },
+    "runsTested": [
+      {
+        "label": "Stock_NVDA_MixedSession_80pts",
+        "picked": "bt_alpaca_d20b875fbd94ALPACA-0.26%MA_CROSS_1M \u2022 NVDA39 trades",
+        "createCountDuringHover": 0,
+        "fitContentDuringHover": 0,
+        "resizeApplyDuringHover": 0,
+        "crosshairStateUpdates": 82,
+        "hoverIgnoredSameBar": 2,
+        "topJumpPx": 0,
+        "heightJumpPx": 0,
+        "hudHeights": [
+          52
+        ],
+        "hudJumpPx": 0,
+        "scrollJumpPx": 0,
+        "rangeDeltaFrom": 0,
+        "rangeDeltaTo": 0,
+        "cardPointerModes": [
+          "none"
+        ]
+      },
+      {
+        "label": "Crypto_24x7_80pts",
+        "picked": "bt_alpaca_025c9959d3d3ALPACA-0.06%MA_CROSS_1M \u2022 BTC/USD165 trades",
+        "createCountDuringHover": 0,
+        "fitContentDuringHover": 0,
+        "resizeApplyDuringHover": 0,
+        "crosshairStateUpdates": 83,
+        "hoverIgnoredSameBar": 10,
+        "topJumpPx": 0,
+        "heightJumpPx": 0,
+        "hudHeights": [
+          52
+        ],
+        "hudJumpPx": 0,
+        "scrollJumpPx": 0,
+        "rangeDeltaFrom": 0,
+        "rangeDeltaTo": 0,
+        "cardPointerModes": [
+          "none"
+        ]
+      },
+      {
+        "label": "Stock_RSI_1M_80pts",
+        "picked": "bt_alpaca_7015c93f34b9ALPACA-0.82%RSI_1M \u2022 MSFT39 trades",
+        "createCountDuringHover": 0,
+        "fitContentDuringHover": 0,
+        "resizeApplyDuringHover": 0,
+        "crosshairStateUpdates": 83,
+        "hoverIgnoredSameBar": 7,
+        "topJumpPx": 0,
+        "heightJumpPx": 0,
+        "hudHeights": [
+          52
+        ],
+        "hudJumpPx": 0,
+        "scrollJumpPx": 0,
+        "rangeDeltaFrom": 0,
+        "rangeDeltaTo": 0,
+        "cardPointerModes": [
+          "none"
+        ]
+      }
+    ]
+  },
+  "regression_summary": {
+    "v2_suites_gd29_to_gd41": {
+      "files": 13,
+      "passed": 649,
+      "failed": 0,
+      "duration_sec": 79.16
+    },
+    "frontend_production_build": {
+      "command": "tsc -b && vite build",
+      "status": "PASS",
+      "time_ms": 604
+    },
+    "frontend_lint": {
+      "command": "oxlint",
+      "errors": 0,
+      "warnings": 24
+    }
+  },
+  "screenshots": [
+    "d:\\AlgoTrading\\data\\reports\\e2e_nvda_hover.png",
+    "d:\\AlgoTrading\\data\\reports\\e2e_crypto_hover.png",
+    "d:\\AlgoTrading\\data\\reports\\e2e_rsi_hover.png"
+  ]
+}

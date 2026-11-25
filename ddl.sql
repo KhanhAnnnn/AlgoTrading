@@ -97,8 +97,16 @@ SELECT
     `close`,
     1 as quantity,
     CASE
-        WHEN sentiment > 0 AND `close` < sma_20 AND lag(`close`, 1) OVER (PARTITION BY symbol ORDER BY news_time) >= sma_20 THEN 'BUY'
-        WHEN sentiment < 0 AND `close` > sma_20 AND lag(`close`, 1) OVER (PARTITION BY symbol ORDER BY news_time) <= sma_20 THEN 'SELL'
+        WHEN sentiment > 0 AND `close` < sma_20
+            AND LAST_VALUE(`close`) OVER (
+                PARTITION BY symbol ORDER BY news_time
+                ROWS BETWEEN 1 PRECEDING AND 1 PRECEDING
+            ) >= sma_20 THEN 'BUY'
+        WHEN sentiment < 0 AND `close` > sma_20
+            AND LAST_VALUE(`close`) OVER (
+                PARTITION BY symbol ORDER BY news_time
+                ROWS BETWEEN 1 PRECEDING AND 1 PRECEDING
+            ) <= sma_20 THEN 'SELL'
         ELSE NULL
     END AS signal
 FROM news_and_prices;
@@ -110,7 +118,7 @@ CREATE OR REPLACE TABLE trading_signals_sink (
 ) WITH (
     'connector' = 'kafka',
     'topic' = 'trading-signals',
-    'properties.bootstrap.servers' = 'redpanda-1:29092, redpanda-2:29093',
+    'properties.bootstrap.servers' = 'redpanda-1:29092,redpanda-2:29093',
     'properties.group.id' = 'trading-signals-group',
     'format' = 'json'
 );

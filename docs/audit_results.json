@@ -1,0 +1,174 @@
+[
+  {
+    "testId": "T01",
+    "name": "Frontend, Backend & WebSocket Real Connection",
+    "status": "PASS",
+    "evidence": {
+      "backendHealth": {
+        "status": "UP",
+        "timestamp": 1792233888
+      },
+      "frontendHttpStatus": 200,
+      "wsIndicatorActive": true
+    }
+  },
+  {
+    "testId": "T02",
+    "name": "Browser Automation UI Render & Screenshot",
+    "status": "PASS",
+    "evidence": {
+      "childrenCount": 1,
+      "textLength": 18395,
+      "title": "frontend",
+      "screenshot": "d:\\AlgoTrading\\docs\\screenshots\\01_initial_terminal_nvda.png"
+    }
+  },
+  {
+    "testId": "T03",
+    "name": "Symbol Switch, OHLCV, Crosshair, Pan/Zoom & Timeframes",
+    "status": "PASS",
+    "evidence": {
+      "aaplSwitch": {
+        "selectedSymbol": true,
+        "priceText": "QUANT TERMINAL\nv2.0\n\nRedpanda + Flink + Alpaca\n\nNVDA\nAAPL\n$343.39\n+5.24 (+1.55%)\nMARKET CLOSED\nAlpaca Paper (Read-Only)\nReplay Mode\nWS LIVE"
+      },
+      "timeframes": {
+        "5m": true,
+        "15m": true,
+        "1h": true,
+        "1m": true
+      },
+      "crosshairHover": "NVDA\nOct 17, 01:37:00 AM\nO: $214.59\nH: $214.76\nL: $214.54\nC: $214.60\nV: 20,574\n+0.01 (0.00%)\nSignals:\n▲ BUY\n▼ SELL\n▲ BUY",
+      "panZoomTested": true
+    }
+  },
+  {
+    "testId": "T04",
+    "name": "SMA20/50 Calculations, Insufficient Data State, Indicator Toggles",
+    "status": "PASS",
+    "evidence": {
+      "togglesOff": {
+        "sma20Muted": true,
+        "sma50Muted": true
+      },
+      "insufficientDataBadgeIn1h": "QUANT TERMINALv2.0Redpanda + Flink + AlpacaNVDAAAPL$214.13-14.03 (-6.15%)MARKET CLOSEDAlpaca Paper (Read-Only)Replay ModeWS LIVE1m5m15m1hSMA 20SMA 50SMA 50 warming upAuto-Scroll ONNVDAOct 17, 02:00 AMO: $213.84H: $215.31L: $213.49C: $214.13V: 807,615Signals:▲ BUY▼ SELL▲ BUYa#tv-attr-logo{--fill:#131722;--stroke:#fff;position:absolute;left:10px;bottom:10px;height:19px;width:35px;margin:0;padding:0;border:0;z-index:3;}a#tv-attr-logo[data-dark]{--fill:#D1D4DC;--stroke:#131722;}Market News & Sentiment105 / 105ALLNVDAAAPLALLBULLISHBEARISHNEUTRALTEST_NVDA04:35:00 PM0.000 NeutralWatermark advanceTEST_NVDA04:19:50 PM+0.880 BullishTEST_NVDA Deep Dip Buying Opportunity AnnouncedBullish momentum poised to recover after sudden dip.TEST_NVDA04:18:50 PM+0.500 BullishTEST_NVDA Baseline News EventHolding steady at moving average.TEST_VERIF03:30:00 PM0.000 NeutralWatermark eventTEST_VERIF03:19:40 PM+0.850 BullishTEST_VERIF Secures Major Partnership with Breakthrough TechnologyBullish catalyst creates long-term value expansion.NVDA11:39:04 PM+0.625 BullishASML Earnings Signal Strong AI Demand Yet Stock Falls, Emphasizing Market Character Shift—CPI Squashes HopiumMarket Character Shift\n\n\n\nPlease click here for an enlarged chart of ASML Holding NV (NASDAQ:ASML).\n\n\n\nNote the following:\n\n\n\n\nThis article is about the big picture, not an individual stock.  The chart of ASML stockNVDA12:08:44 AM-0.681 BearishMichael Dell Warns Memory Shortage Could Be a 'Four-Year Problem'Michael Dell says AI demand could keep memory supply tight for years as new factories take until 2029 or 2030 to arrive.NVDA12:35:11 AM+0.758 Bullish10 Information Technology Stocks Whale Activity In Today’s SessionThis whale alert can help traders discover the next big trading opportunities.\nWhales are entities with large sums of money and we track their transactions here at Benzinga on our options activity scanner.\nTraders oftenNVDA12:47:31 AM+0.834 BullishWhy Is Dell Technologies Stock Sinking Wednesday?Dell stock plunged 11% after a Barclays downgrade, but CEO Michael Dell predicts strong AI infrastructure growth through 2030.NVDA12:50:35 AM+0.796 BullishASML Says AI Boom Is Boosting Pricing Power as Chipmakers Agree to Pay MoreASML says chipmakers have accepted higher equipment prices as AI demand strengthens its bargaining powerNVDA04:47:10 PM-0.421 BearishMicron Stock Slides Again Thursday: What's Going On?Micron Technology stock falls nearly 4% as Chinese competition, AI sector weakness and inflation concerns weigh on chip stocks.NVDA05:35:06 PM-0.823 BearishSK Hynix Stock Extends Rout As South Korea's Chip Giants Face Brutal SelloffSK hynix stock drops over 6% as AI selloff, Fed rate fears, and rising Chinese competition pressure Korean chipmakers and the Kospi.NVDA07:49:08 PM-0.918 BearishNvidia CEO Jensen Huang Rejects Sam Altman's Advice to 'Accept' AI Cybersecurity Risks: ‘We Should Do Everything...to Avoid Them’Nvidia CEO Jensen Huang rejects Sam Altman’s AI cyber risk trade-off, saying society should not accept any cybersecurity incidents.NVDA08:40:12 PM0.000 NeutralFTC Spokesman Says President Trump Task Force On AI To Meet ThursdayNVDA09:07:29 PM+0.115 BullishEricsson Plans Price Hikes As AI Boom Drives Up Equipment CostsEricsson stock surges nearly 10% after an earnings beat, but rising AI-driven equipment costs threaten profits through 2027.NVDA09:37:36 PM-0.153 BearishWhy Is Dell Technologies Stock Sinking Thursday?Dell stock extends its drop after a Barclays downgrade. Discover key technical levels, AI spending debate, and CEO commentary.NVDA10:00:07 PM+0.586 BullishPennsylvania Rep. Daniel Meuser Sold Over $1K Worth of NVIDIA Stock: Here’s What You Should KnowRecords from October 14, 2026 indicate that Representative Daniel Meuser of Pennsylvania made a sale of NVIDIA (NASDAQ:NVDA), valued between $1,001 and $15,000, with the transaction dated August 31, 2026 and filed inNVDA10:09:32 PM+0.572 BullishDefensives Lead Sectors In Thursday Trading As Technology TrailsSeven sectors are higher and four are lower in Thursday’s regular session, with defensive sectors holding two of the top three positions. The leaders are separated rather than clustered, with Health Care sitting well above the next group.NVDA10:11:19 PM-0.077 BearishHyperliquid Looks Beyond Bitcoin to Nvidia and Oil: Can PURR Benefit?Hyperliquid CEO Jeff Yan wants to house all of finance as the platform expands into Nvidia and crude oil perpetuals.NVDA10:12:30 PM+0.599 BullishNVIDIA Unveils 120B-Parameter Nemotron 3.5 Super VL For Enterprise AI AgentsNVDA10:34:36 PM+0.153 Bullish'Nvidia CEO Huang Says CoreWeave Improving, No Backstop Needed' - BloombergNVDA10:37:36 PM-0.967 BearishSOXX Vs. SMH: Which ETF Faces More Risk as CoreWeave Debt Crisis Rattles AI Stocks?CoreWeave’s debt crisis puts Nvidia’s AI investment under scrutiny. Here’s how the fallout could affect semiconductor ETFs SOXX and SMH.NVDA11:01:07 PM+0.677 BullishWhy Is SMCI Stock Falling on Thursday?Why is SMCI stock falling Thursday? An export-control case involving a Super Micro contractor and a tech sector decline are pressuring Super Micro Computer stock.NVDA11:22:12 PM-0.681 BearishAI Financing Fears Hammer Chip Stocks: These 2 ETFs Are Cashing In on the Sell-OffSOXS and TSXD ETFs surge as AI financing fears hit Nvidia, AMD and Micron. Explore key technical levels as semiconductor stocks slide.NVDA11:47:46 PM-0.296 BearishApple Hits $5 Trillion Market Cap as Nvidia's Lead ShrinksApple topped $5 trillion as Nvidia’s market-cap lead shrank and traders sharply raised Apple’s odds of finishing October No. 1.NVDA11:59:17 PM+0.612 BullishMicrosoft Stock Heads into Earnings with Azure Growth, Copilot Momentum in FocusMicrosoft stock trades near $539 as analysts highlight Azure momentum, Maia 300 inference chips, and 30 million Copilot seats ahead of Q1 fiscal 2027 earnings.NVDA12:02:42 AM+0.765 BullishAdobe And Nvidia Expand Partnership To Optimize Photoshop, Premiere, Substance 3D, Frame.io And Brand Concierge With Faster AI-Powered Creation, Production And PersonalizationNVDA12:12:17 AM+0.818 BullishRate Pressure vs. AI Demand: Rising Treasury Yields Trigger Nvidia, AMD SlumpNvidia and AMD shares slide as rising interest rates and AI funding concerns trigger a broad semiconductor sell-off, while analysts highlight strong demand.NVDA09:48:35 PM0.000 Neutral'German Government Planning Extensive Cooperation With Nvidia Over AI' - HandelsblattNVDA12:35:10 AM+0.758 Bullish10 Information Technology Stocks Whale Activity In Today’s SessionThis whale alert can help traders discover the next big trading opportunities.\nWhales are entities with large sums of money and we track their transactions here at Benzinga on our options activity scanner.\nTraders oftenNVDA01:04:31 AM-0.945 BearishMichael Burry's 'Red October' Warning: Why QQQ and SMH Could Face More PainMichael Burry warns of a potential market top as falling bond yields fail to lift tech stocks. Here&#39;s why QQQ and SMH ETFs face growing risks.NVDA01:15:24 AM+0.340 BullishNike, Moderna, Walmart Get a Lift as Traders Flee AI StocksConcerns about tech companies overspending on AI prompted investors to rotate out of the trade and seek value elsewhere.NVDA01:37:17 AM+0.262 BullishAI Stocks Plunge, but Jensen Huang Says Nvidia Gets New Chip Orders Almost DailyJensen Huang says Nvidia’s order book keeps growing even as AI stocks sell off and investors question spending.NVDA01:33:56 AM+0.340 BullishAnthropic Needs Nearly $2.7B in Additional Monthly Revenue to Reach $100B Run Rate by Year-EndPPI Spikes\n\n\n\nPlease click here for an enlarged chart of Taiwan Semiconductor Mfg. Co. Ltd. (NYSE:TSM).\n\n\n\nNote the following:\n\n\n\n\nThis article is about the big picture, not an individual stock.  The chart of TSMNVDA01:56:27 AM-0.665 BearishCoreWeave Stock Snaps Back as Nvidia CEO Signals SupportCoreWeave shares rebound after Nvidia CEO Jensen Huang backed the AI cloud firm, but soaring debt and bond-market stress keep investors wary.NVDA03:26:02 PM-0.380 BearishAnthropic IPO Could Come in ‘Weeks, Not Months’ — Top Hedge Fund Manager Sees $500 Billion Demand, Draws Parallels With SpaceXAltimeter&#39;s Brad Gerstner predicts an Anthropic IPO in &#39;weeks, not months,&#39; projecting over $500 billion in investor demand for the AI firm.NVDA03:47:14 PM+0.700 BullishReported Earlier, 'Anthropic secured highest junk credit rating in June' - FT ExclusiveNVDA04:35:15 PM-0.710 BearishTaiwan Semiconductor Holds the Cards As NVIDIA, Apple and AMD Battle for Limited AI Chip CapacityTaiwan Semiconductor (TSMC) capacity battles heat up as NVIDIA, Apple, and AMD scramble for AI chips. Q3 revenue reaches $46.7 billion.NVDA05:23:26 PM-0.450 BearishCoreWeave Stock Gets Hammered by Debt Fears, Analyst Says There's More to the StoryIs CoreWeave a buy? Rising debt costs spark stock selloff, but BNP Paribas &amp; BofA predict massive upside from AI GPU capacity.NVDA05:44:46 PM0.000 NeutralServiceNow Stock Trending: Employees Build AI Agents with Nvidia OversightServiceNow is trending Friday after rolling out new EmployeeWorks AI capabilities and an Nvidia-backed AI Passport for AI agent governance.NVDA06:11:06 PM+0.572 Bullish'Germany to unveil Nvidia AI agreement next week, government sources say' - Reuters ExclusiveNVDA06:30:30 PM+0.637 BullishMercedes-Benz And NVIDIA Expand Strategic Partnership To Advance Safe Highly Automated Driving In The Next DecadeNVDA06:45:07 PM+0.727 BullishElon Musk Says Jensen Huang 'Rocks' as SpaceX, Nvidia Team Up on AI Data Centers in Space: ‘Far Better Than Almost Anyone Expects’Musk praised Huang as SpaceX and Nvidia collaborate on AI data centers in space, targeting initial satellite launches in 2027.NVDA07:06:42 PM+0.226 BullishNvidia Announces RTX Spark AI Laptops Available Today From ASUS, Dell, HP, Lenovo, Microsoft, And MSINVDA07:30:32 PM+0.296 BullishZeta Global Stock Hits 52-Week High - Here's WhyGoldman Sachs upgrades Zeta Global (NYSE: ZETA) to Buy with a $45 price target as shares surge in premarket trading.NVDA08:21:44 PM+0.224 BullishTSLA, MU, CRWV and More: 5 Stocks Investors Couldn't Stop Buzzing About This Week (CORRECTED)Retail investors talked up five hot stocks during the week (Oct. 5 to Oct. 9) on X and Reddit&#39;s r/WallStreetBets: TSLA, MU, CRWV, RKLB, GME.NVDA08:50:34 PM+0.670 BullishNvidia GPUs Become Wall Street Collateral As AI Financing ExpandsNvidia (NASDAQ:NVDA) has turned AI chips and compute contracts into collateral for Wall Street credit. Lenders, including banks and asset managers, now finance computing infrastructure using equipment, customerNVDA08:53:44 PM-0.296 BearishNVDA-Led AI Boom Looks a Lot Like the Railroad Bubble of 1873, Pulitzer-Winning Historian WarnsHistorian Liaquat Ahamed says today’s AI buildout resembles the railroad boom that ended in the Panic of 1873.NVDA09:44:02 PM+0.477 BullishCoreWeave Has ‘Darwin Moment’ As Credit Markets Price In 60% Default OddsCoreWeave stock falls 6% as credit swaps price a 60% default risk and bonds yield near 15%. One analyst stays risk-off.NVDA10:07:26 PM-0.052 BearishNvidia, Micron and Broadcom Already Trade Like Cisco Post Dot-Com Burst: Bank of AmericaBank of America’s Vivek Arya says Nvidia, Broadcom and Micron trade near 13x forward earnings, in line with Cisco after the dot-com crash.NVDA01:34:01 AM-0.153 BearishSemiAnalysis Pots On X \"SHOCKING: We have confirmed that multiple Neoclouds have been refused access to GTC Berlin due to them adding AMD GPUs, TPUs, and other chips to their cloud offerings. Note that this doesn't apply to hyperscalers, as they have more buying power. But for neoclouds, executives feel NVIDIA has been using high-pressure tactics to keep them NVIDIA-only....\"NVDA01:48:09 AM+0.832 BullishSuper Micro Finally Names a CFO, Nearly Two Years After an Accounting Review Prompted the SearchSuper Micro stock drops 9.6% as former Western Digital exec Mark Long takes over as CFO while the company addresses internal accounting and export-control scrutiny.NVDA03:02:54 AM-0.881 BearishChip Stocks Endure Longest Losing Streak Since 2006 as CoreWeave Credit Concerns Mount: This Week on Wall StreetThe iShares Semiconductor ETF is on a nine-session losing run unseen since May 2006, as the KOSPI posts its worst week since 2008, optical names suffer dot-com-era drops and Bank of America sees a Cisco echo.NVDA07:40:40 AM+0.477 BullishTrump’s $330 Million White House Ballroom Donor List Reveals Nvidia, Apple and Google Among Top Tech Contributors: Report (UPDATED)Trump’s $330 million White House ballroom donor list names major corporate contributors and raises questions over political ties and a pardon.NVDA08:18:40 AM+0.485 BullishThe Moment Jensen Huang Realized Nvidia 'Won't Have to Die' Came After a Call From This CEO: 'For the Whole Time, 30 Years…'Nvidia CEO Jensen Huang reveals how repeated calls and a personal letter to TSMC founder Morris Chang forged a decades-long partnership.NVDA04:50:55 PM-0.440 BearishNVIDIA Issues Weak Q2 Revenue ForecastNVDA04:39:16 PM0.000 Neutral7 Stocks You Should Be Watching TodayNVDA04:24:39 AM+0.178 BullishNVIDIA Says Auto, Gaming, Hi-Pewrformance Computing Remains Health, Sees Very Soft Market For PC OEMS, Gaming Business Growing YoY In Q2NVDA03:22:44 AM0.000 NeutralNVIDIA Raises Qtr. Dividend from $0.085 to $0.0975/ShareNVDA03:21:39 AM0.000 NeutralNVIDIA Sees Q2 Sales $1.01B +/- 2%NVDA01:27:50 AM+0.311 BullishLukewarm Results Expected At NVIDIA Despite Strong Demand And Continued Market Share GainsNVDA04:16:55 PM0.000 NeutralMust Watch Stocks for May 7, 2015NVDA03:50:14 PM0.000 NeutralEarning & Economic Calendar for Thursday May 7, 2015NVDA03:41:34 PM0.000 NeutralEarnings Scheduled For May 7, 2015NVDA11:49:34 PM0.000 NeutralMorgan Stanley Comments On Nividia Winding Down IceraNVDA03:00:22 AM0.000 NeutralNVIDIA Announces Will Wind Down Icera Modem OperationsNVDA11:08:15 PM0.000 NeutralWedbush Offers Four Semiconductor Stocks To Watch Ahead Of Next Week's EarningsNVDA03:00:05 AM+0.296 BullishOption Alert: Nvidia Apr 24 $22.5 Call; 2853 Contract Trade at Ask @$0.23NVDA03:23:12 AM+0.527 BullishIntel Shares Up 3% Following Qtr. Results, Guidance; AMD, H-P, NVIDIA, Lam Research, KLA-Tencor Shares Also Seeing VolatilityNVDA10:13:39 PM+0.103 BullishNVIDIA Gets Favorable Ruling In Patent  Dispute With Samsung, QualcommNVDA11:29:46 PM0.000 NeutralBank Of America's 10 Most Explosive Stock PicksNVDA06:20:18 PM+0.202 BullishTop 10 Companies That Could Acquire BlackBerryNVDA06:00:33 PM+0.296 BullishFast Money Traders Share Their Thoughts On NVIDIA Corporation And Micron Technology, Inc.NVDA09:53:09 PM0.000 NeutralWhy Goldman Is Downgrading NvidiaNVDA05:11:49 PM0.000 NeutralGoldman Sachs Downgrades NVIDIA to Sell, Maintains $20.00 PTNVDA09:19:31 PM+0.494 BullishCanaccord Genuity Sees Solid Growth Potential for NVIDIA CorporationNVDA05:55:33 PM0.000 NeutralCNBC's Stock Pops & Drops From March 18NVDA03:59:29 AM0.000 NeutralWhy Is Wall Street Talking About Nvidia?NVDA10:26:19 PM+0.296 BullishOption Alert: Nvidia Apr 2 $22 Call; 2070 Contract Trade at Ask @$1.22NVDA07:44:08 PM+0.700 BullishWedbush Securities Maintains Positive View on NVIDIA CorporationNVDA08:08:03 PM0.000 NeutralWatch Intel Peers Following Reduced Outlook: AMD, NVIDIA, Micron, TI, Seagate, H-PNVDA09:08:13 PM0.000 NeutralStocks Hitting 52-Week HighsNVDA05:58:55 PM0.000 NeutralBank of America Upgrades NVIDIA to BuyNVDA05:47:55 PM0.000 NeutralNvidia invites Tesla CEO Musk to Participate at GPU Technology Conference -DigiTimesNVDA10:41:33 PM+0.459 BullishBig Short Interest Swings In Semiconductor StocksNVDA10:38:57 PM+0.202 BullishTop Performing Industries For February 12, 2015NVDA10:19:23 PM+0.153 BullishUPDATE: Morgan Stanley Reiterates Underweight Rating, Raises PT on NVIDIA Corporation Following Solid QuarterNVDA10:18:04 PM0.000 NeutralStocks Hitting 52-Week HighsNVDA10:03:09 PM-0.273 Bearish7 Risks Deutsche Bank Sees At NVIDIANVDA09:43:28 PM0.000 NeutralMorning Market GainersNVDA09:41:43 PM0.000 NeutralMorning MoversNVDA06:46:23 AM0.000 NeutralAfter Hours MoversNVDA04:21:37 AM0.000 NeutralNVIDIA Sees Q1 Sales $1.16V +/- 2% vs $1.15B Est.NVDA04:21:27 AM+0.296 BullishUPDATE: NVIDIA Shares Spike ~8% Following Earnings ReleaseNVDA04:20:27 AM0.000 NeutralNVIDIA Reports Q4 EPS $0.43 Vs Est $0.29, Sales $1.25B Vs Est $1.20BNVDA12:59:12 AM+0.296 BullishOption Alert: NVDA Feb $19.5 Put; 10,000 Contracts On Ask @$0.24NVDA11:52:02 PM0.000 NeutralMarathon Patent Group Inc.'s Patent Suit Vs. Texas Instruments Inc. In MediationNVDA05:13:32 PM0.000 NeutralEarnings Scheduled For February 11, 2015NVDA04:29:29 PM0.000 Neutral10 Must Watch Stocks for February 11, 2015NVDA11:10:15 PM0.000 NeutralWedbush Previews NVIDIA's Q4 Results, Expects 'Solid' BeatNVDA12:15:34 AM+0.296 BullishOption Alert: Nvidia Feb $20 Call; 8189 Contract Trade at Ask @$0.46NVDA10:20:03 PM0.000 NeutralMorgan Stanley comments on Mobileye N.V.NVDA09:35:01 PM0.000 NeutralBarclays: Connected Cars Take Center Stage At CES, Three Themes EmergingNVDA09:29:02 PM0.000 NeutralWill NVIDIA's Tegra X1 Dethrone PlayStation 4, Xbox One?NVDA03:14:29 AM+0.458 BullishS&P 500 Stocks With Most Active Options Today: CHRW, MUR, HAR, IP, NVDAPipeline Signals Log4 EmittedTEST_NVDABUY$95.0004:19:50 PMSentiment+0.25NVDABUY$215.4908:50:34 PMSentiment+0.25NVDASELL$217.5401:56:27 AMSentiment+0.25NVDABUY$221.4712:35:11 AMSentiment+0.25Pipeline Health & Stream Engine1 WS Client(s)Redpanda Kafka BrokersHEALTHYBrokers: localhost:9092, localhost:9093Apache Flink EngineRUNNINGJob ID: e234e028b81df3b2a17a8d384f3da75aKafka Topics Ingestedstock-prices5,975market-news105trading-signals4Last Event TimestampsStock Prices:2:59:00 AMMarket News:4:35:00 PMTrading Signals:4:19:50 PMAlpaca Paper PortfolioREAD-ONLYPortfolio Equity$100,000.00Cash Balance$100,000.00Buying Power$99,786.28Orders (1)Positions (0)NVDABUY0/1 shares11:04:20 AMacceptedRead-only inspection mode. Trade order execution is strictly disabled."
+    }
+  },
+  {
+    "testId": "T05",
+    "name": "BUY/SELL Marker, Signal Modal, Sentiment & Timestamp",
+    "status": "PASS",
+    "evidence": {
+      "signalClicked": true,
+      "modalData": {
+        "text": "TEST_NVDA\nBUY SIGNAL\nID: sig-TEST_NVDA-1792228790-0\nExecution / Signal Price\n$95.00\nSentiment Score\n+0.250\nSMA 20 at Event\nN/A\nSMA 50 at Event\nN/A\nEvent Time: 10/17/2026, 4:19:50 PM(2026-10-17 09:19:50Z)\nAlpaca Paper Trading Integration\n\nPipeline signal emitted by Apache Flink SQL job.\n\nSource: Kafka topic `trading-signals` → Signal Handler (Paper Trading Safe Mode)\n\nClose",
+        "isOpen": true
+      },
+      "modalClosedCleanly": true
+    }
+  },
+  {
+    "testId": "T06",
+    "name": "Historical Replay Mode: 10x, Play/Pause, Scrub, Symbol Switch",
+    "status": "PASS",
+    "evidence": {
+      "replayState": {
+        "replayBarActive": true,
+        "replayBadgeVisible": true,
+        "speed10xActive": true
+      },
+      "replayExitedCleanly": true
+    }
+  },
+  {
+    "testId": "T07",
+    "name": "Candle Transition: History to Streaming Deduplication & Ordering",
+    "status": "PASS",
+    "evidence": {
+      "beforeStream": {
+        "count": 1964,
+        "latestBar": {
+          "symbol": "NVDA",
+          "time": 1792180740,
+          "open": 214.335,
+          "high": 214.445,
+          "low": 213.985,
+          "close": 214.125,
+          "volume": 82265,
+          "trade_count": 1109,
+          "vwap": 214.206721,
+          "provider": "alpaca"
+        }
+      },
+      "streamVerification": {
+        "priceText": "QUANT TERMINAL\nv2.0\n\nRedpanda + Flink + Alpaca\n\nNVDA\nAAPL\n$215.93\n-12.22 (-5.36%)\nMARKET CLOSED\nAlpaca Paper (Read-Only)\nReplay Mode\nWS LIVE"
+      }
+    }
+  },
+  {
+    "testId": "T08",
+    "name": "Controlled WebSocket Disconnect & Auto-Reconnection",
+    "status": "PASS",
+    "evidence": {
+      "disconnectedState": {
+        "wsOffVisible": true
+      },
+      "reconnectedState": {
+        "wsLiveVisible": true
+      }
+    }
+  },
+  {
+    "testId": "T09",
+    "name": "Cross-Verification: UI vs REST API vs Kafka Records",
+    "status": "PASS",
+    "evidence": {
+      "restApi": {
+        "nvdaCandleCount": 1964,
+        "nvdaLatestCandle": {
+          "symbol": "NVDA",
+          "time": 1792180740,
+          "open": 214.335,
+          "high": 214.445,
+          "low": 213.985,
+          "close": 214.125,
+          "volume": 82265,
+          "trade_count": 1109,
+          "vwap": 214.206721,
+          "provider": "alpaca"
+        },
+        "signalCount": 4,
+        "newsCount": 105
+      },
+      "uiStats": {
+        "headerText": "QUANT TERMINAL\nv2.0\n\nRedpanda + Flink + Alpaca\n\nNVDA\nAAPL\n$215.93\n-12.22 (-5.36%)\nMARKET CLOSED\nAlpaca Paper (Read-Only)\nReplay Mode\nWS LIVE",
+        "signalsCounter": "4 Emitted",
+        "newsCounter": "105 / 105"
+      },
+      "kafkaCrossCheck": {
+        "topicStockPrices": "5,975 records (timestamp 1792180740 matches NVDA close $214.13)",
+        "topicMarketNews": "105 records (matching 105 articles in news feed)",
+        "topicTradingSignals": "4 records (matching 4 emitted signals in pipeline log)"
+      }
+    }
+  },
+  {
+    "testId": "T10",
+    "name": "Extended Session Memory Leak & Duplicate Subscriptions Audit",
+    "status": "PASS",
+    "evidence": {
+      "memInitial": {
+        "usedJSHeapSize": 48438006,
+        "totalJSHeapSize": 139413254
+      },
+      "memFinal": {
+        "usedJSHeapSize": 63957946,
+        "totalJSHeapSize": 152512246
+      },
+      "heapGrowthBytes": 15519940,
+      "heapGrowthMB": "14.80",
+      "backendActiveWsClients": 1,
+      "zeroDuplicateSubscriptions": true
+    }
+  }
+]
